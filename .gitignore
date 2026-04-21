@@ -1,0 +1,53 @@
+# Data
+data_raw/*.csv
+data_raw/*.zip
+data_raw/*.json
+
+# Outputs
+outputs/submissions/*.csv
+outputs/models/*.pkl
+outputs/models/*.joblib
+**/outputs/*.csv
+**/outputs/*.pkl
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Large files
+*.pkl
+*.joblib
+*.h5
+*.parquet
+*.pt
+*.pth
+*.onnx
+
+# Pretrained models (too large)
+shared/pretrained_models/*
+
+# External data
+shared/external_data/*
+
+# Logs
+/tmp/
+
+# MLflow
+mlruns/
