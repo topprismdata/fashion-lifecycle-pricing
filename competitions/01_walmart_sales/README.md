@@ -26,11 +26,17 @@
 - 2nd: GBDT ensemble (Extra Trees + GBM + RF)
 - Common: XGBoost/LightGBM with lag features, rolling stats
 
+## Experiment Results
+
+| Version | CV WMAE | Public LB | Private LB | Key Technique |
+|---------|---------|-----------|------------|---------------|
+| R01 | 1568.88 | 3102.97 | 3215.57 | LightGBM baseline, 28 features |
+
 ## ML Workflow Checklist
-- [ ] EDA: data format, missing values, sales distribution
-- [ ] Baseline: LightGBM with basic features
+- [x] EDA: data format, missing values, sales distribution
+- [x] Baseline: LightGBM with basic features (R01: LB=3102.97)
 - [ ] Feature engineering: lag, rolling, holiday, markdown handling
 - [ ] Model optimization: multi-model, weighted loss
 - [ ] Ensemble: stacking/blending
 - [ ] Post-processing: negative sales → 0
-- [ ] Submit and record LB
+- [ ] Target: LB < 2800 (top 10%)
