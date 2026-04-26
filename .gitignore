@@ -51,3 +51,4 @@ shared/external_data/*
 
 # MLflow
 mlruns/
+reference_solution_45th/
