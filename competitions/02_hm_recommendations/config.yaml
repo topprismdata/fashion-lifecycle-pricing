@@ -1,0 +1,27 @@
+competition:
+  name: "H&M Personalized Fashion Recommendations"
+  slug: "h-and-m-personalized-fashion-recommendations"
+  url: "https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations"
+  metric: "MAP@12"
+  metric_direction: "maximize"
+  task_type: "recommendation"
+
+data:
+  train_file: "transactions_train.csv"
+  test_file: "sample_submission.csv"
+  target_col: null
+  id_col: "customer_id"
+  submission_format: "space_separated_ids"
+
+training:
+  n_folds: 5
+  random_state: 42
+  cv_strategy: "time_based"
+
+mlflow:
+  experiment_name: "hm_recommendations"
+  tracking_uri: "sqlite:///mlflow.db"
+
+submission:
+  max_per_day: 5
+  validate_before_submit: true

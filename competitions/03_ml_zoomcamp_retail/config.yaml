@@ -1,0 +1,40 @@
+competition:
+  name: "ML Zoomcamp 2024 Retail Sales Forecasting"
+  slug: "ml-zoomcamp-2024-retail"
+  url: ""
+  metric: "RMSE"
+  metric_direction: "minimize"
+  task_type: "timeseries"
+
+data:
+  train_file: "sales.csv"
+  test_file: "test.csv"
+  target_col: "quantity"
+  id_col: "row_id"
+  submission_format: "csv"
+
+training:
+  n_folds: 1
+  random_state: 42
+  cv_strategy: "time_based"
+
+mlflow:
+  experiment_name: "ml_zoomcamp_retail"
+  tracking_uri: "sqlite:///mlflow.db"
+
+submission:
+  max_per_day: 10
+  validate_before_submit: true
+
+models:
+  catboost:
+    iterations: 1000
+    learning_rate: 0.1
+    depth: 8
+    loss_function: "RMSE"
+    eval_metric: "RMSE"
+    early_stopping_rounds: 50
+    task_type: "CPU"
+    thread_count: -1
+    random_seed: 42
+    verbose: 100
