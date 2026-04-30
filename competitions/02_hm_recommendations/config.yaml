@@ -1,3 +1,9 @@
+# H&M Personalized Fashion Recommendations — Competition Config
+#
+# NOTE: Data files live in data_raw/ (not data/raw/).
+# Framework's get_data_path() resolves to data/raw/, so scripts
+# should use `cfg.project_root / "data_raw"` for actual file paths.
+
 competition:
   name: "H&M Personalized Fashion Recommendations"
   slug: "h-and-m-personalized-fashion-recommendations"
@@ -17,6 +23,20 @@ training:
   n_folds: 5
   random_state: 42
   cv_strategy: "time_based"
+
+models:
+  default: "lightgbm"
+  lightgbm:
+    objective: "binary"
+    metric: "average_precision"
+    boosting_type: "gbdt"
+    num_leaves: 63
+    learning_rate: 0.05
+    feature_fraction: 0.8
+    bagging_fraction: 0.8
+    bagging_freq: 5
+    min_child_samples: 50
+    verbose: -1
 
 mlflow:
   experiment_name: "hm_recommendations"

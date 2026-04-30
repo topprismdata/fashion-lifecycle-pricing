@@ -1,0 +1,13 @@
+# Core ML
+lightgbm==4.6.0
+pandas==2.3.3
+numpy==2.3.3
+
+# Experiment tracking
+mlflow==3.10.0
+
+# Config
+pyyaml==6.0.3
+
+# Kaggle
+kaggle>=1.6.0

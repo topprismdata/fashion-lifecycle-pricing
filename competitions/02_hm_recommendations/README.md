@@ -26,7 +26,11 @@
 
 | Version | Val MAP@12 | Public LB | Private LB | Key Technique | Notes |
 |---------|-----------|-----------|------------|---------------|-------|
-| **R15** | n/a | **0.02279** | **0.02271** | R12 core + ItemCF max 12 (no co-occurrence) | **BEST** |
+| **R15** | n/a | **0.02279** | **0.02271** | R12 core + ItemCF max 12 (no co-occurrence) | **BEST heuristic** |
+| **R27** | 0.0906 (active) | 0.02364 | 0.02314 | MLOps framework + GBDT ranking (40 features, LightGBM) | **BEST GBDT**, framework-validated |
+| R21 | ~0.05 (active) | 0.02365 | — | GBDT + rich features (age, price, trend, freshness) | R27 baseline |
+| R18 | ~0.05 (active) | 0.02318 | — | GBDT ranking (22 features) | First successful GBDT |
+| R26 | n/a | 0.01504 | 0.01523 | Replicate 45th place (LGB recall2 binary) | Worse: distribution mismatch |
 | R14 | n/a | 0.02277 | 0.02261 | R12 core + ItemCF max 6 | Near-best |
 | R13 | n/a | 0.02267 | 0.02250 | R12 core + ItemCF max 4 | Good |
 | R12 | n/a | 0.02259 | 0.02240 | R05 core + ItemCF max 2 fill-only | Breakthrough: ItemCF helps |
@@ -131,9 +135,11 @@ Missing this causes LB = 0.00000.
 - [x] EDA: data format, distributions, article/customer characteristics
 - [x] Baseline: R01 repurchase + popular (LB=0.02207)
 - [x] LGBMRanker pipeline: candidate generation + ranking (R02-R03)
-- [x] Time-decay improvements: R05 (LB=0.02224, best)
+- [x] Time-decay improvements: R05 (LB=0.02224)
 - [x] Candidate expansion experiments: co-occurrence, ALS, product variants (R04, R06-R09)
 - [x] Key insight: simple heuristics beat all complex approaches
 - [x] Further improvement: ItemCF from purchase sequences (R12-R15, LB=0.02279)
+- [x] GBDT ranking with rich features (R18-R21, R27 LB=0.02364)
+- [x] MLOps framework validation (R27: config, MLflow, validation gates, evaluation gate)
 - [ ] Word2Vec embeddings for items
 - [ ] Target: LB > 0.025 (top 30%)
