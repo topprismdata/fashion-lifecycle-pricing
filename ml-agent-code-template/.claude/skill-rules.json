@@ -59,6 +59,28 @@
       "priority": 5
     },
     {
+      "id": "self-critique-checkpoint",
+      "patterns": [
+        "\\b(let['\u2019]?s|let\\s+me|i['\u2019]?m\\s+going\\s+to|going\\s+to)\\s+(try|use|train|do|run|build|commit)\\b",
+        "\\b(my\\s+plan|the\\s+plan)\\b",
+        "\\b(starting|starting\\s+to)\\s+(training|building|running)\\b"
+      ],
+      "skill": "self-critique-checkpoint",
+      "reason": "Before committing to a direction, run 5-question self-critique (hypothesis, evidence, expected range, failure mode, plan B). Catches 30% error-path waste.",
+      "priority": 8
+    },
+    {
+      "id": "path-efficiency-analysis",
+      "patterns": [
+        "\\b(retrospective|retrospect|review|wrap\\s+up|recap)\\b",
+        "\\bwhat\\s+did\\s+(i|we)\\s+(learn|do)\\b",
+        "\\b(efficiency|productivity|recovery|repetitiveness|wrong\\s+path)\\b"
+      ],
+      "skill": "path-efficiency-analysis",
+      "reason": "Don't just measure outcomes — measure HOW efficiently. Recovery Rate, Repetitiveness, Tool Productivity, Costliest Wrong Path.",
+      "priority": 3
+    },
+    {
       "id": "retail-eda-framework",
       "patterns": [
         "\\b(eda|exploratory\\s+data\\s+analysis|explore\\s+the\\s+data|understand\\s+the\\s+data)\\b",

@@ -64,6 +64,10 @@ patterns = [
     # Strategic
     (r'\b(architecture|architectural)\s+(decision|choice|change)\b', 'architectural decision'),
     (r'\b(start|begin|launch)\s+(production|live|prod)\b', 'going to production'),
+    # NEW: Pre-execution simulation (P0 enhancement)
+    (r"\b(let['\u2019]?s|let\s+me|i['\u2019]?m\s+going\s+to|going\s+to)\s+(train|execute|run|build|fit|deploy)\b", 'pre-execution'),
+    (r'\b(training|fitting|executing|deploying)\s+(on|with|a|an|the)\s+\w+', 'pre-execution'),
+    (r'\b(run|execute|launch)\s+(\w+\s+){0,3}(training|pipeline|experiment|simulation|script)\b', 'pre-execution'),
 ]
 
 # Ignore patterns (questions, hypotheticals)

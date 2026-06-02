@@ -33,3 +33,13 @@ Write memory/feedback_no_recheck_confirmed_dead.md → append
 # Log experiment
 Write memory/experiments/exp_<YYYYMMDD>_<name>.md
 ```
+## Proactive Evolution (2026-06-01)
+
+- [skills/self-critique-checkpoint](../memory/skills/self-critique-checkpoint.md) — P0 mid-task self-critique (5 questions before executing)
+- [skills/path-efficiency-analysis](../memory/skills/path-efficiency-analysis.md) — P2 analyze HOW efficiently (Recovery, Repetitiveness, Tool Productivity, Costliest Wrong Path)
+
+## New Hooks (2026-06-01)
+
+- `hooks/self_critique_trigger.sh` — fires on "let me try/train/run" prompts
+- `hooks/path_efficiency.sh` — analyzes session log for 4 efficiency metrics
+- `hooks/cross_review_trigger.sh` — extended to also fire on train/execute/run (pre-execution simulation)
