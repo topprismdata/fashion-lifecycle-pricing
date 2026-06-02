@@ -52,3 +52,20 @@ S6E4 项目积累的 skills 和经验直接适用:
 - 参考全局 CLAUDE.md 中的内存管理规则
 - 避免并行读取大文件
 - 使用 tail/grep 替代读取完整日志
+
+## Claude Code 集成 (Optional)
+
+`ml-agent-code-template/` 子目录提供 Claude Code 集成层:
+- **9 hooks** — auto-activation, cross-review, dev-docs, 500-line rule, security audit
+- **6 slash commands** — `/dev-docs`, `/grade`, `/review`, `/meta-optimize`, `/meta-apply`, `/eda`
+- **2 agents** — builder, grader (team pattern)
+- **5 skills** — check-dead-ends, codex-review, memory-index-reader, meta-optimize, retail-eda-framework
+- **EDA 框架** — `/eda` 命令一键运行 5 阶段 EDA pipeline (ydata-profiling + missingno + sweetviz + tslumen)
+- **跨模型评审** — agy/gemini/codex/ollama 作为 critic
+
+启用方法:
+```bash
+bash ml-agent-code-template/SETUP.sh
+```
+
+完整文档: `ml-agent-code-template/README.md` 和 `CHANGELOG.md` (v0.5.0)。
