@@ -1,0 +1,34 @@
+topprism:
+  purpose: decision_science
+  capability: lifecycle_pricing
+  platform_layer: decision_engine_research
+  maturity: research
+  evidence:
+    type: benchmark_experimental
+    notes: "Public benchmark / experimental evidence not yet published; research prototype state per README Current Status"
+  product_context:
+    - retail
+    - pricing
+    - inventory
+
+business_question:
+  en: >-
+    Given uncertain demand and finite inventory, when should a fashion
+    retailer change price — and by how much — across a product
+    lifecycle?
+  zh: >-
+    在需求不确定、库存有限的前提下，时尚零售商在产品生命周期内应该
+    何时调价、调多少？
+
+platform:
+  system: decision_intelligence
+  layer: decision_science
+  solution: lifecycle_pricing
+
+website:
+  product_path: /decisions/pricing
+  evidence_path: /evidence/fashion-lifecycle-pricing
+
+repository:
+  owner: topprismdata
+  public: true
