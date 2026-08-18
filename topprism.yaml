@@ -1,11 +1,15 @@
 topprism:
-  purpose: decision_science
+  purpose: decision-science
   capability: lifecycle_pricing
   platform_layer: decision_engine_research
   maturity: research
   evidence:
-    type: benchmark_experimental
-    notes: "Public benchmark / experimental evidence not yet published; research prototype state per README Current Status"
+    type: internal-evaluation
+    source: topprism-internal-eval
+    scope: >-
+      Public benchmark / experimental evidence not yet published;
+      research prototype state per README Current Status.
+    status: research-prototype
   product_context:
     - retail
     - pricing
@@ -21,13 +25,13 @@ business_question:
     何时调价、调多少？
 
 platform:
-  system: decision_intelligence
-  layer: decision_science
-  solution: lifecycle_pricing
+  system: decision-intelligence
+  layer: decision-science
+  solution: lifecycle-pricing
 
 website:
-  product_path: /decisions/pricing
-  evidence_path: /evidence/fashion-lifecycle-pricing
+  status: planned
+  path: /decisions/pricing
 
 repository:
   owner: topprismdata
