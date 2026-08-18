@@ -48,9 +48,8 @@ This repository is a **research prototype**, not a production pricing
 system.
 
 The current codebase contains design, planning, competition / experiment
-material, ML-agent templates, research insights, and source modules. The
-public repository currently lacks a root README; this file should become
-the stable entry point.
+material, ML-agent templates, research insights, and source modules. This
+README is the stable public entry point.
 
 ------------------------------------------------------------------------
 
@@ -93,21 +92,14 @@ Future evidence should separate:
 
 ------------------------------------------------------------------------
 
-## Recommended public docs
+## Documentation
 
-``` text
-README.md
-docs/
-├── problem-formulation.md
-├── datasets.md
-├── forecasting.md
-├── pricing-policy.md
-├── evaluation.md
-└── limitations.md
-```
+Long-form methodology lives alongside the code; this README is the public
+entry point and summarizes only the project identity, current status,
+research architecture and evidence discipline.
 
-Keep `DESIGN.md` and `PLAN.md` as internal / historical design
-artifacts, not the public homepage.
+`DESIGN.md` and `PLAN.md` are kept in the repository as internal /
+historical design artifacts, not as the public homepage.
 
 ------------------------------------------------------------------------
 
