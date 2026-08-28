@@ -1,6 +1,6 @@
 # 执行计划 — Fashion Lifecycle Pricing
 
-> 基于 DESIGN.md 的具体执行计划
+> 基于 `DESIGN.md` 的具体执行计划
 > 创建时间: 2026-04-21
 
 ---

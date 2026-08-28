@@ -108,7 +108,7 @@ Long-form methodology lives alongside the code; this README is the public
 entry point and summarizes only the project identity, current status,
 research architecture and evidence discipline.
 
-`DESIGN.md` and `PLAN.md` are kept in the repository as internal /
+`docs/DESIGN.md` and `docs/PLAN.md` are kept in the repository as internal /
 historical design artifacts, not as the public homepage.
 
 ------------------------------------------------------------------------

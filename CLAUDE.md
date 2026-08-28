@@ -4,12 +4,12 @@
 
 机器学习驱动的服饰全生命周期决策优化研究。
 覆盖 7 个竞赛/数据集，从需求预测到动态定价的完整技术栈。
-详见 DESIGN.md 和 PLAN.md。
+详见 `docs/DESIGN.md` 和 `docs/PLAN.md`。
 
 ## 项目结构
 
-- `DESIGN.md` — 完整技术设计文档
-- `PLAN.md` — 执行计划和里程碑
+- `docs/DESIGN.md` — 完整技术设计文档
+- `docs/PLAN.md` — 执行计划和里程碑
 - `src/` — 共享模块 (跨竞赛复用)
 - `competitions/` — 7个竞赛独立目录
 - `research/` — 研究笔记

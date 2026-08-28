@@ -247,8 +247,8 @@ for iteration in range(max_iter):
 
 ```
 fashion-lifecycle-pricing/
-├── DESIGN.md                    # 本文件 — 项目详细设计
-├── PLAN.md                      # 执行计划与里程碑
+├── docs/DESIGN.md               # 本文件 — 项目详细设计
+├── docs/PLAN.md                 # 执行计划与里程碑
 ├── CLAUDE.md                    # Claude Code 工作指引
 │
 ├── src/                         # 共享模块
