@@ -4,6 +4,12 @@
 
 # Fashion Lifecycle Pricing
 
+> **Language / 语言:** English primary · 中文概览如下。
+>
+> ### 中文概览
+> 围绕需求预测、生命周期状态和降价优化的决策科学研究，用于研究有限库存下的价格调整时机。
+
+
 **Decision research for demand forecasting, lifecycle state, and
 markdown optimization.**
 
